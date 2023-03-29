@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript embutido e em arquivo externo</title>
+</head>
+<body>
+
+    <h1>Teste o script embutido</h1>
+    <input type="button" id="littleButton" value="Frase profunda">
+
+    <script>
+
+        function importantPhrase(){
+        alert('"Não há razão alguma em usar a palavra “impossível” para descrever algo que claramente aconteceu."\n(Douglas Adams)')
+        }
+
+        const btn = document.getElementById("littleButton");
+        btn.addEventListener("click", function(){
+            importantPhrase();
+        });
+
+        
+    </script>
+    
+</body>
+</html>
